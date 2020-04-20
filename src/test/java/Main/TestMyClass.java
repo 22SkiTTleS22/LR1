@@ -18,7 +18,7 @@ public class TestMyClass {
         assertEquals(0, myClass.maxUniqueString(""));
         assertEquals(1, myClass.maxUniqueString("b"));
         assertEquals(4, myClass.maxUniqueString("abcdbffg"));
-        assertNotNull(myClass.maxUniqueString(randomString.generate(100000)));
+        assertNotNull(myClass.maxUniqueString(randomString.generate(10000)));
     }
 }
 

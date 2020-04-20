@@ -15,19 +15,21 @@ public class MyClass {
             return 0;
         } else {
             int maxLength = 1;
+            int strLength = str.length();
             ArrayList<Character> mas = new ArrayList<Character>();
-            for (int j = 0; j < str.length(); j++) {
-                for (int i = j; i < str.length(); i++) {
+            for (int j = 0; j < strLength; j++) {
+                for (int i = j; i < strLength; i++) {
                     if (mas.contains(strArray[i]))  {
                         if (maxLength < mas.size()) {
                             maxLength = mas.size();
-                            mas.add(strArray[i]);
+                            //mas.add(strArray[i]);
                         }
+                        i = strLength;
                         mas.clear();
                     } else {
                         mas.add(strArray[i]);
                     }
-                    if (i == str.length() - 1) {
+                    if (i == strLength - 1) {
                         if (maxLength < mas.size()) {
                             maxLength = mas.size();
                         }
