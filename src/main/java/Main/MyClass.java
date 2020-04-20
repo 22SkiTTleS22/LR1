@@ -15,7 +15,7 @@ public class MyClass {
             return 0;
         } else {
             int maxLength = 1;
-            ArrayList<Character> mas = new ArrayList<>();
+            ArrayList<Character> mas = new ArrayList<Character>();
             for (int j = 0; j < str.length(); j++) {
                 for (int i = j; i < str.length(); i++) {
                     if (mas.contains(strArray[i]))  {
