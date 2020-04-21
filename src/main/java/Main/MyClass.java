@@ -2,6 +2,7 @@ package Main;
 
 //import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.Set;
 //import java.util.Scanner;
 
 public class MyClass {
@@ -17,7 +18,7 @@ public class MyClass {
         } else {
             int maxLength = 1;
             int strLength = str.length();
-            HashSet<Character> mas = new HashSet<Character>();
+            Set<Character> mas = new HashSet<Character>();
             for (int j = 0; j < strLength; j++) {
                 for (int i = j; i < strLength; i++) {
                     if (mas.contains(strArray[i]))  {
